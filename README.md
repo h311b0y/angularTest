@@ -2,7 +2,7 @@
 
 ## Test Instructions
 
-1. Clone the repo and create a new branch to do your work in.
+1. Fork the repo and create a new branch to do your work in.
 
 2. Create a new component 'clubs' along with a 'clubs' service. Feel free to add a router if you want.
 

@@ -20,7 +20,7 @@
 
 9. Use either template driven or reactive forms for your form. There isn't a right answer but be prepared to explain your choice.
 
-10. When you're done create a pull request into master from your branch.
+10. When you're done create a pull request into master from your branch, and then make a pull request from your repository's master branch into our repository's master branch.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 

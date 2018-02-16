@@ -12,19 +12,17 @@ A completed application will alow the user to see a list of the clubs, add a new
 
 3. In the 'clubs' service add a function that uses an http get request to read colors.json from the assets folder.
 
-4. The 'local-storage' service should have all the methods you need for data manipulation. The type 'Club' has also been provided.
+4. In the 'clubs' component create a view to display the list of clubs. The 'local-storage' service should have all the methods you need for data retrieval and manipulation. The type 'Club' has also been provided.
 
-5. In the 'clubs' component create a view to display the list of clubs.
+5. Add a form that allows editing of any of the individual entries listed in the display. **IMPORTANT:** When editing the 'color' field of a club the form should use a dropdown. The dropdown should be populated with values from the colors data you got earler in your 'clubs' service. The key thing here is linking the ids and names properly.
 
-6. Add a form that allows editing of any of the individual entries listed in the display. **IMPORTANT:** When editing the 'color' field of a club the form should use a dropdown. The dropdown should be populated with values from the colors data you got earler in your 'clubs' service. The key thing here is linking the ids and names properly.
+6. Add a form to add a new entry to the list of clubs. Don't forget the dates. Bonus if this is the same form as before.
 
-7. Add a form to add a new entry to the list of clubs. Don't forget the dates. Bonus if this is the same form as before.
+7. Add a way to delete any of the individual entries.
 
-8. Add a way to delete any of the individual entries.
+8. Use either template driven or reactive forms for your form. There isn't a right answer but be prepared to explain your choice.
 
-9. Use either template driven or reactive forms for your form. There isn't a right answer but be prepared to explain your choice.
-
-10. When you're done create a pull request into master from your branch, and then make a pull request from your repository's master branch into our repository's master branch.
+9. When you're done create a pull request into master from your branch, and then make a pull request from your repository's master branch into our repository's master branch.
 
 If you have any questions please do not hesitate to ask.
 

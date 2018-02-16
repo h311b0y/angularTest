@@ -2,6 +2,10 @@
 
 ## Test Instructions
 
+The purpose of this test is to create an application for the viewing and management of data for several different clubs in the English Premier League. Each club contains data for its name, city, color, whether or not it is one of the top four clubs, and the date of its next match.
+
+A completed application will alow the user to see a list of the clubs, add a new club, edit a club, and delete a club. The main focus of this test in on the GUI and UX that you provide and as such a simulated backend has been provided in the 'local-storage' service.
+
 1. Fork the repo and create a new branch to do your work in.
 
 2. Create a new component 'clubs' along with a 'clubs' service. Feel free to add a router if you want.
@@ -12,7 +16,7 @@
 
 5. In the 'clubs' component create a view to display the list of clubs.
 
-6. Add a form that allows editing of any of the individual entries listed in the display. **IMPORTANT:** When editing the 'color' field of a club the form should use a dropdown. The dropdown should be populated with values from the colors data in your 'clubs' service. The key thing here is linking the ids and names properly.
+6. Add a form that allows editing of any of the individual entries listed in the display. **IMPORTANT:** When editing the 'color' field of a club the form should use a dropdown. The dropdown should be populated with values from the colors data you got earler in your 'clubs' service. The key thing here is linking the ids and names properly.
 
 7. Add a form to add a new entry to the list of clubs. Don't forget the dates. Bonus if this is the same form as before.
 
@@ -21,6 +25,8 @@
 9. Use either template driven or reactive forms for your form. There isn't a right answer but be prepared to explain your choice.
 
 10. When you're done create a pull request into master from your branch, and then make a pull request from your repository's master branch into our repository's master branch.
+
+If you have any questions please do not hesitate to ask.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 

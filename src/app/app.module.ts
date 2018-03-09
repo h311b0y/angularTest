@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { LocalStorageService } from './local-storage.service';
+import { LocalStorageService } from './services/local-storage.service';
 
 import { AppComponent } from './app.component';
 import { ClubsComponent } from './clubs/clubs.component';
@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ClubsService } from './services/clubs.service';
+import { ClubComponent } from './club/club.component';
 
 
 @NgModule({
@@ -18,11 +19,12 @@ import { ClubsService } from './services/clubs.service';
     ClubsComponent,
     NavbarComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ClubComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     LocalStorageService,

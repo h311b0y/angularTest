@@ -1,3 +1,19 @@
-<p>
-  clubs works!
-</p>
+<app-club [currentClub]="currentClub" [isEdit]="isEdit" (newClub)="onNewClub($event)" (updatedClub)="onUpdatedClub($event)"></app-club>
+<h2>Clubs</h2>
+
+<div class="card">
+  <div class="card-body">
+    <h3>{{ Club.name }}</h3>
+    <p>{{ Club.city }}<br>
+    {{ Club.color }}<br>
+    {{ Club.isTopFour }}<br>
+    {{ Club.nextMatchDate }}</p>
+
+    <hr>
+
+    <button (click)="removeClub(Club)"class="btn btn-danger"><i class="fa fa-remove"></i></button>
+
+    <button (click)="editClub(Club)" class="btn btn-light"><i class="fa fa-pencil"></i></button>
+
+  </div>
+</div>

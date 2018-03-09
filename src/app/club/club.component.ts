@@ -1,19 +1,20 @@
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
-import { Club } from '../models/club';
 import { LocalStorageService } from '../services/local-storage.service';
+import { Club } from '../models/club';
 
 @Component({
-  selector: 'app-clubs',
-  templateUrl: './clubs.component.html',
-  styleUrls: ['./clubs.component.css']
+  selector: 'app-club',
+  templateUrl: './club.component.html',
+  styleUrls: ['./club.component.css']
 })
-export class ClubsComponent implements OnInit {
+
+export class ClubComponent implements OnInit {
   @Output() newClub: EventEmitter<Club> = new EventEmitter();
   @Output() updatedClub: EventEmitter<Club> = new EventEmitter();
   @Input() currentClub: Club;
   @Input() isEdit: boolean;
 
-  constructor() { }
+  constructor(private localStorageService: LocalStorageService) { }
 
   ngOnInit() {
   }

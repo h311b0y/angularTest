@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Club } from './club';
+import { Club } from '../models/club';
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';

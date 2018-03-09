@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-import { Club } from './club';
+import { Club } from './models/club';
 
-import { LocalStorageService } from './local-storage.service';
+import { LocalStorageService } from './services/local-storage.service';
 
 @Component({
   selector: 'app-root',

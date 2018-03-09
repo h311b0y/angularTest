@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { Club } from '../models/club';
 import { ClubsService } from '../services/clubs.service';
 import { LocalStorageService } from '../services/local-storage.service';
@@ -53,6 +53,18 @@ export class ClubsComponent implements OnInit {
         }
       }
     });
+  }
+
+  removeclub(club: Club) {
+    if(confirm('Are You Sure?')) {
+      this.localStorageService.removeClub(club.id).subscribe(() => {
+        this.clubs.forEach((cur, index) => {
+          if(club.id === cur.id) {
+            this.clubs.splice(index, 1);
+          }
+        });
+      });
+    }
   }
 
 }

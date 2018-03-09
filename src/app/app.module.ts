@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ClubsService } from './services/clubs.service';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppRoutingModule
   ],
   providers: [
-    LocalStorageService
+    LocalStorageService,
+    ClubsService
   ],
   bootstrap: [AppComponent]
 })

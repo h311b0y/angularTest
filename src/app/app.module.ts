@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { LocalStorageService } from './services/local-storage.service';
 
 import { AppComponent } from './app.component';
@@ -24,6 +24,7 @@ import { ClubComponent } from './club/club.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
   ],
   providers: [

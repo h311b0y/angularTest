@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { FormsModule }  from '@angular/forms';
 import { LocalStorageService } from '../services/local-storage.service';
 import { Club } from '../models/club';
 import { Observable } from 'rxjs/Observable';

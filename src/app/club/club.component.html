@@ -6,17 +6,17 @@
 
     <div class="form-group">
       <label>Name</label>
-      <input type="text" class="form-control" ng-model="currentClub.name" name="name" #title>
+      <input type="text" class="form-control" [(ngModel)]="currentClub.name" name="name" #title>
     </div>
     
     <div class="form-group">
       <label>City</label>
-      <input type="text" class="form-control" ng-model="currentPost.city" name="city" #city>
+      <input type="text" class="form-control" [(ngModel)]="currentPost.city" name="city" #city>
     </div>
 
     <div class="form-group">
       <label>Color</label>
-      <select name="color" class="form-control" ng-model="currentClub.color" #color>
+      <select name="color" class="form-control" [(ngModel)]="currentClub.color" #color>
         <option ng-repeat="currentClub.color"></option>
       </select>
     </div>
@@ -25,20 +25,20 @@
       <label>Is it a Top-Four Club?</label>
       <div class="radio">
         <label>
-          <input type="radio" name="isTopFour" ng-model="currentClub.isTopFour" #isTopFour>Yes
+          <input type="radio" name="isTopFour" [(ngModel)]="currentClub.isTopFour" #isTopFour>Yes
         </label>
         <label>
-          <input type="radio" name="isTopFour" ng-model="currentClub.isTopFour" #isTopFour>No
+          <input type="radio" name="isTopFour" [(ngModel)]="currentClub.isTopFour" #isTopFour>No
         </label>
       </div>
     </div>
 
     <div class="form-group">
       <label>Next Match Date</label>
-      <input type="text" class="form-control" ng-model="currentClub.nextMatchDate" name="nextMatchDate" #nextMatchDate>
+      <input type="text" class="form-control" [(ngModel)]="currentClub.nextMatchDate" name="nextMatchDate" #nextMatchDate>
     </div>
     
-    <input type="hidden" ng-Model="currentClub.id" name="id">
+    <input type="hidden" [(ngModel)]="currentClub.id" name="id">
     
     <button *ngIf="!isEdit" (click)="addClub(name.value, city.value, color.value, isTopFour.value, nextMatchDate.value)" class="btn btn-dark btn-block">Add Club</button>
 

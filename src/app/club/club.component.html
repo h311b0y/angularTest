@@ -18,8 +18,7 @@
       <label>Color</label>
       <select class="form-control" [(ngModel)]="currentClub.color" name="color" #color>
         <option value="">Select a Color:</option>
-        <option name="color" value="1">1</option>
-        <!--*ngFor="let colors of currentClub.color" [value]="colors" [(ngModel)]="currentClub.color"-->
+        <option name="color" *ngFor="let colors of colors" [(ngModel)]="currentClub.color"></option>
       </select>
     </div>
 

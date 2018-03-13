@@ -1,5 +1,6 @@
 import { Component, OnInit, } from '@angular/core';
 import { Club } from '../models/club';
+import { Color } from '../models/colors';
 import { ClubsService } from '../services/clubs.service';
 import { LocalStorageService } from '../services/local-storage.service';
 
@@ -10,6 +11,7 @@ import { LocalStorageService } from '../services/local-storage.service';
 })
 export class ClubsComponent implements OnInit {
   clubs: Club[];
+  colors: Color[];
   currentClub: Club = {
     id: 0,
     name: '',
@@ -22,16 +24,20 @@ export class ClubsComponent implements OnInit {
 
   constructor(
     private localStorageService: LocalStorageService,
-    private clubsService: ClubsService
+    private clubsService: ClubsService,
+    private colorJSON: Color
   ) { }
 
   ngOnInit() {
     this.localStorageService.getClubs().subscribe(clubs => {
       this.clubs = clubs;
     });
-    // this.clubsService.getJSON().subscribe(data => {
-    //   console.log(data)
-    // });
+  }
+  showColors() {
+    this.clubsService.getJSON()
+      .subscribe(data => {
+        console.log(data);
+    });
   }
 
   onNewClub(club: Club) {

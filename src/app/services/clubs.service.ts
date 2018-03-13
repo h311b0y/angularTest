@@ -14,17 +14,18 @@ const httpOptions = {
 @Injectable()
 export class ClubsService {
   clubs: Club[];
-  colorsUrl: string = './assets/colors';
+  colorsUrl: string = '../assets/colors.json';
 
-  // constructor(private http: HttpClient) { 
-  //   this.getJSON().subscribe(data => {
-  //     console.log(data)
-  //   });
-  // }
+  constructor(private http: HttpClient) { 
+    this.getJSON().subscribe(data => {
+      console.log(data)
+    })
+  }
   
-  // public getJSON(): Observable<any> {
-  //   return this.http.get("../assets/colors.json")
-  // }
+  public getJSON(): Observable<any> {
+    return this.http.get(this.colorsUrl)
+    };
+  }
   
 
-}
+

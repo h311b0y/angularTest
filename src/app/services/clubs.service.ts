@@ -16,10 +16,15 @@ export class ClubsService {
   clubs: Club[];
   colorsUrl: string = './assets/colors';
 
-  constructor(private http: HttpClient) { }
-
-  getColors(): Observable<Color[]> {
-    return this.http.get<Color[]>(this.colorsUrl);
-  }
+  // constructor(private http: HttpClient) { 
+  //   this.getJSON().subscribe(data => {
+  //     console.log(data)
+  //   });
+  // }
+  
+  // public getJSON(): Observable<any> {
+  //   return this.http.get("../assets/colors.json")
+  // }
+  
 
 }

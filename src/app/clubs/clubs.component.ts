@@ -20,12 +20,18 @@ export class ClubsComponent implements OnInit {
   }
   isEdit: boolean = false;
 
-  constructor(private localStorageService: LocalStorageService) { }
+  constructor(
+    private localStorageService: LocalStorageService,
+    private clubsService: ClubsService
+  ) { }
 
   ngOnInit() {
     this.localStorageService.getClubs().subscribe(clubs => {
       this.clubs = clubs;
     });
+    // this.clubsService.getJSON().subscribe(data => {
+    //   console.log(data)
+    // });
   }
 
   onNewClub(club: Club) {

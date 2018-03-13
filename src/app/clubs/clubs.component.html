@@ -1,6 +1,5 @@
-<app-club [currentClub]="currentClub" [isEdit]="isEdit" (newClub)="onNewClub($event)" (updatedClub)="onUpdatedClub($event)"></app-club>
-<h2>Clubs</h2>
-
+<div class="col-sm-7 floatFix">
+  <h2>List of Clubs</h2>
 <div class="card" *ngFor="let club of clubs">
   <div class="card-body">
     <h3>{{ club.name }}</h3>
@@ -17,3 +16,6 @@
 
   </div>
 </div>
+</div>
+
+    <app-club [currentClub]="currentClub" [isEdit]="isEdit" (newClub)="onNewClub($event)" (updatedClub)="onUpdatedClub($event)"></app-club>

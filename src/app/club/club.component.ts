@@ -35,7 +35,7 @@ export class ClubComponent implements OnInit {
     })
   }
 
-  updatePost() {
+  updateClub() {
     this.localStorageService.editClub(this.currentId, this.currentClub).subscribe(club => {
       console.log(club);
       this.isEdit = false;

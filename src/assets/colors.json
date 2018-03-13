@@ -1,13 +1,17 @@
 [{
   "name": "Red",
+  "hex": "#CC0000",
   "id": 0
 }, {
   "name": "Blue",
+  "hex": "0000CC",
   "id": 1
 }, {
   "name": "Sky",
+  "Hex": "#7EC0EE",
   "id": 2
 }, {
   "name": "White",
+  "Hex": "#FFFFFF",
   "id": 3
 }]

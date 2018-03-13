@@ -1,4 +1,4 @@
-<h2>Add Club</h2>
+<div class="col-sm-5 floatFix"><h2>Add or Edit a Club</h2>
 
 <div class="card card-body mb-3">
 
@@ -11,13 +11,15 @@
     
     <div class="form-group">
       <label>City</label>
-      <input type="text" class="form-control" [(ngModel)]="currentPost.city" name="city" #city>
+      <input type="text" class="form-control" [(ngModel)]="currentClub.city" name="city" #city>
     </div>
 
     <div class="form-group">
       <label>Color</label>
-      <select name="color" class="form-control" [(ngModel)]="currentClub.color" #color>
-        <option ng-repeat="currentClub.color"></option>
+      <select class="form-control" [(ngModel)]="currentClub.color" name="color" #color>
+        <option value="">Select a Color:</option>
+        <option name="color" value="1">1</option>
+        <!--*ngFor="let colors of currentClub.color" [value]="colors" [(ngModel)]="currentClub.color"-->
       </select>
     </div>
 
@@ -46,4 +48,5 @@
 
   </form>
 
+</div>
 </div>
